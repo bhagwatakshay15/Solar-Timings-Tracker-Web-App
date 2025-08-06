@@ -4,8 +4,7 @@ A clean and responsive web application that enables users to find sunrise and su
 
 🔗 **[View the Live Website](https://bhagwatakshay15.github.io/Solar-Timings-Tracker-Web-App/)**
 
-![Screenshot](https://example.com/your-image-link.jpg)
-
+![Screen Shot](https://github.com/bhagwatakshay15/Solar-Timings-Tracker-Web-App/blob/main/images/screenshot.jpg)
 
 ---
 
