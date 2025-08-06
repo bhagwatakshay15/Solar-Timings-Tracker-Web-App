@@ -1,0 +1,169 @@
+body {
+    font-family: serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('./images/sun.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #E98563;
+    color: white;
+    text-align: center;
+    padding: 0.5em 0;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.2); 
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#search {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+button {
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+#placeholder {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #f9f9f9;
+    text-align: center;
+    width: 40%;
+    max-width: 450px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.1em 0;
+}
+
+#search {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #f9f9f9;
+}
+
+button {
+    background-color: #E98563;
+    border: none;
+    color: white;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #d95454;
+}
+
+.hidden {
+    display: none;
+}
+
+#results {
+    position: relative;
+    border: 1px solid #ddd;
+    padding-top: 320px; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #fff;
+    width: 80%;
+    max-width: 650px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#resultGifContainer {
+    background-image: url('./images/newgif.gif');
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%); 
+    border-radius: 8px;
+}
+
+#resultContent {
+    position: relative;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    input[type="text"], button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #search, #results {
+        width: 90%;
+    }
+}
+
+/*  for mobile */
+@media (max-width: 600px) {
+    body {
+        background-image: url('./images/sunset1.jpeg');
+    }
+}
+
+.data-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.data-column {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+@media (max-width: 800px) {
+    .data-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
